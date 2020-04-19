@@ -26,7 +26,7 @@ namespace BusinessLayer.Implementations {
 				: _context.Directory.FirstOrDefault(x => x.Id == directoryId);
 		}
 
-		public void SaveDirectory(Directory directory) {
+		public int SaveDirectory(Directory directory) {
 			if (directory.Id == 0) {
 				_context.Directory.Add(directory);
 			}
@@ -35,6 +35,7 @@ namespace BusinessLayer.Implementations {
 			}
 
 			_context.SaveChanges();
+			return directory.Id;
 		}
 
 		public void DeleteDirectory(Directory directory) {

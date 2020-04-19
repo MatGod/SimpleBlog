@@ -10,37 +10,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85af07b6-60a6-4f01-a6bd-9245c574658d" name="Default Changelist" comment="DataLayer">
-      <change afterPath="$PROJECT_DIR$/BusinessLayer/BusinessLayer.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BusinessLayer/DataManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BusinessLayer/Implementations/EFDirectoryRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BusinessLayer/Implementations/EFMaterialRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BusinessLayer/Interfaces/IDirectoryRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BusinessLayer/Interfaces/IMaterialRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataLayer/Enums/PageEnums.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PresentationLayer/Models/DirectoryModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PresentationLayer/Models/MaterialModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PresentationLayer/Models/PageModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PresentationLayer/PresentationLayer.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PresentationLayer/ServiceManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PresentationLayer/Services/DirectoryService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PresentationLayer/Services/MaterialService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication/Controllers/PageController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication/Views/Page/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication/Views/Page/PageEditor.cshtml" afterDir="false" />
+    <list default="true" id="85af07b6-60a6-4f01-a6bd-9245c574658d" name="Default Changelist" comment="Business and Presentation Layers">
+      <change afterPath="$PROJECT_DIR$/WebApplication/wwwroot/Resourses/Icons/EditIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication/wwwroot/favicon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/dataSources/7660c51c-0135-48c6-8966-6d9ad1256746.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/dataSources/7660c51c-0135-48c6-8966-6d9ad1256746.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/dataSources/7660c51c-0135-48c6-8966-6d9ad1256746/storage_v2/_src_/database/DataBase.u-l0bg/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/dataSources/7660c51c-0135-48c6-8966-6d9ad1256746/storage_v2/_src_/database/DataBase.u-l0bg/schema/dbo.sYMBAA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/Migrations/20200418215406_Init.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataLayer/Migrations/20200418215406_Init.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/Migrations/EFDBContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataLayer/Migrations/EFDBContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/SampleData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataLayer/SampleData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication.sln" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BusinessLayer/Implementations/EFDirectoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessLayer/Implementations/EFDirectoryRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BusinessLayer/Implementations/EFMaterialRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessLayer/Implementations/EFMaterialRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BusinessLayer/Interfaces/IDirectoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessLayer/Interfaces/IDirectoryRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BusinessLayer/Interfaces/IMaterialRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BusinessLayer/Interfaces/IMaterialRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PresentationLayer/Services/DirectoryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/Services/DirectoryService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PresentationLayer/Services/MaterialService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PresentationLayer/Services/MaterialService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/Controllers/PageController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Controllers/PageController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication/WebApplication.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/WebApplication.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/wwwroot/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/wwwroot/favicon.ico" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +78,7 @@
     <setting file="file://$USER_HOME$/AppData/Roaming/NuGet/NuGet.Config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2559E4EC-8E8D-42A6-9696-E27886B878E9/C/Controller.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Views/Page/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2559E4EC-8E8D-42A6-9696-E27886B878E9/7C/ViewDataDictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BusinessLayer/DataManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BusinessLayer/Interfaces/IDirectoryRepository.cs" root0="FORCE_HIGHLIGHTING" />
@@ -114,10 +103,6 @@
         <option value="$PROJECT_DIR$/WebApplication/appsettings.json" />
         <option value="$PROJECT_DIR$/WebApplication/Program.cs" />
         <option value="$PROJECT_DIR$/BusinessLayer/Class1.cs" />
-        <option value="$PROJECT_DIR$/BusinessLayer/Interfaces/IMaterialRepository.cs" />
-        <option value="$PROJECT_DIR$/BusinessLayer/Interfaces/IDirectoryRepository.cs" />
-        <option value="$PROJECT_DIR$/BusinessLayer/Implementations/EFDirectoryRepository.cs" />
-        <option value="$PROJECT_DIR$/BusinessLayer/Implementations/EFMaterialRepository.cs" />
         <option value="$PROJECT_DIR$/BusinessLayer/DataManager.cs" />
         <option value="$PROJECT_DIR$/PresentationLayer/Class1.cs" />
         <option value="$PROJECT_DIR$/DataLayer/SampleData.cs" />
@@ -127,15 +112,21 @@
         <option value="$PROJECT_DIR$/PresentationLayer/Models/MaterialModel.cs" />
         <option value="$PROJECT_DIR$/PresentationLayer/ServiceManager.cs" />
         <option value="$PROJECT_DIR$/DataLayer/Enums/PageEnums.cs" />
-        <option value="$PROJECT_DIR$/PresentationLayer/Services/MaterialService.cs" />
-        <option value="$PROJECT_DIR$/WebApplication/Views/Home/Index.cshtml" />
         <option value="$PROJECT_DIR$/WebApplication/Startup.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Pages/Page/Index.cshtml" />
         <option value="$PROJECT_DIR$/WebApplication/Pages/Page/PageEditor.cshtml" />
         <option value="$PROJECT_DIR$/WebApplication/Views/Page/PageEditor.cshtml" />
-        <option value="$PROJECT_DIR$/WebApplication/Controllers/PageController.cs" />
+        <option value="$PROJECT_DIR$/PresentationLayer/Services/MaterialService.cs" />
+        <option value="$PROJECT_DIR$/BusinessLayer/Interfaces/IMaterialRepository.cs" />
+        <option value="$PROJECT_DIR$/BusinessLayer/Interfaces/IDirectoryRepository.cs" />
+        <option value="$PROJECT_DIR$/BusinessLayer/Implementations/EFMaterialRepository.cs" />
         <option value="$PROJECT_DIR$/PresentationLayer/Services/DirectoryService.cs" />
+        <option value="$PROJECT_DIR$/BusinessLayer/Implementations/EFDirectoryRepository.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Controllers/PageController.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/WebApplication/wwwroot/css/site.css" />
+        <option value="$PROJECT_DIR$/WebApplication/Views/Home/Index.cshtml" />
       </list>
     </option>
   </component>
@@ -218,7 +209,7 @@
       <workItem from="1587260716345" duration="537000" />
       <workItem from="1587267742575" duration="2068000" />
       <workItem from="1587273767195" duration="16915000" />
-      <workItem from="1587318475015" duration="3995000" />
+      <workItem from="1587318475015" duration="12742000" />
     </task>
     <task id="LOCAL-00001" summary="EF Migrations">
       <created>1587274716053</created>
@@ -241,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587277261478</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Business and Presentation Layers">
+      <created>1587322535338</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587322535338</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,93 +264,98 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="EF Migrations" />
     <MESSAGE value="DataLayer" />
-    <option name="LAST_COMMIT_MESSAGE" value="DataLayer" />
+    <MESSAGE value="Business and Presentation Layers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Business and Presentation Layers" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587276405111">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
     <state x="2472" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587276405111" />
-    <state width="1877" height="375" key="GridCell.Tab.0.bottom" timestamp="1587322476145">
+    <state width="407" height="466" key="DebuggerActiveHint" timestamp="1587328785575">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.bottom/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
-    <state width="1877" height="375" key="GridCell.Tab.0.center" timestamp="1587322476144">
+    <state width="407" height="466" key="DebuggerActiveHint/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587328785575" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1587332804453">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.center/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476144" />
-    <state width="1877" height="375" key="GridCell.Tab.0.left" timestamp="1587322476144">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587332804453" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1587332804452">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.left/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476144" />
-    <state width="1877" height="375" key="GridCell.Tab.0.right" timestamp="1587322476145">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587332804452" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1587332804452">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.0.right/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
-    <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1587322476145">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587332804452" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1587332804453">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.bottom/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
-    <state width="1877" height="375" key="GridCell.Tab.1.center" timestamp="1587322476145">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587332804453" />
+    <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1587328928946">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.center/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
-    <state width="1877" height="375" key="GridCell.Tab.1.left" timestamp="1587322476145">
+    <state width="1877" height="375" key="GridCell.Tab.1.bottom/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587328928946" />
+    <state width="1877" height="375" key="GridCell.Tab.1.center" timestamp="1587328928946">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.left/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
-    <state width="1877" height="375" key="GridCell.Tab.1.right" timestamp="1587322476145">
+    <state width="1877" height="375" key="GridCell.Tab.1.center/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587328928946" />
+    <state width="1877" height="375" key="GridCell.Tab.1.left" timestamp="1587328928946">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.1.right/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
-    <state width="1877" height="375" key="GridCell.Tab.2.bottom" timestamp="1587322476145">
+    <state width="1877" height="375" key="GridCell.Tab.1.left/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587328928946" />
+    <state width="1877" height="375" key="GridCell.Tab.1.right" timestamp="1587328928946">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.bottom/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
-    <state width="1877" height="375" key="GridCell.Tab.2.center" timestamp="1587322476145">
+    <state width="1877" height="375" key="GridCell.Tab.1.right/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587328928946" />
+    <state width="1877" height="375" key="GridCell.Tab.2.bottom" timestamp="1587328928947">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.center/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
-    <state width="1877" height="375" key="GridCell.Tab.2.left" timestamp="1587322476145">
+    <state width="1877" height="375" key="GridCell.Tab.2.bottom/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587328928947" />
+    <state width="1877" height="375" key="GridCell.Tab.2.center" timestamp="1587328928947">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.left/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
-    <state width="1877" height="375" key="GridCell.Tab.2.right" timestamp="1587322476145">
+    <state width="1877" height="375" key="GridCell.Tab.2.center/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587328928947" />
+    <state width="1877" height="375" key="GridCell.Tab.2.left" timestamp="1587328928946">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.2.right/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
-    <state width="1877" height="375" key="GridCell.Tab.3.bottom" timestamp="1587322476145">
+    <state width="1877" height="375" key="GridCell.Tab.2.left/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587328928946" />
+    <state width="1877" height="375" key="GridCell.Tab.2.right" timestamp="1587328928947">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.bottom/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
-    <state width="1877" height="375" key="GridCell.Tab.3.center" timestamp="1587322476145">
+    <state width="1877" height="375" key="GridCell.Tab.2.right/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587328928947" />
+    <state width="1877" height="375" key="GridCell.Tab.3.bottom" timestamp="1587328928947">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.center/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
-    <state width="1877" height="375" key="GridCell.Tab.3.left" timestamp="1587322476145">
+    <state width="1877" height="375" key="GridCell.Tab.3.bottom/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587328928947" />
+    <state width="1877" height="375" key="GridCell.Tab.3.center" timestamp="1587328928947">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.left/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
-    <state width="1877" height="375" key="GridCell.Tab.3.right" timestamp="1587322476145">
+    <state width="1877" height="375" key="GridCell.Tab.3.center/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587328928947" />
+    <state width="1877" height="375" key="GridCell.Tab.3.left" timestamp="1587328928947">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.3.right/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
-    <state width="1877" height="375" key="GridCell.Tab.4.bottom" timestamp="1587322476145">
+    <state width="1877" height="375" key="GridCell.Tab.3.left/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587328928947" />
+    <state width="1877" height="375" key="GridCell.Tab.3.right" timestamp="1587328928947">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.4.bottom/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
-    <state width="1877" height="375" key="GridCell.Tab.4.center" timestamp="1587322476145">
+    <state width="1877" height="375" key="GridCell.Tab.3.right/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587328928947" />
+    <state width="1877" height="375" key="GridCell.Tab.4.bottom" timestamp="1587328928947">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.4.center/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
-    <state width="1877" height="375" key="GridCell.Tab.4.left" timestamp="1587322476145">
+    <state width="1877" height="375" key="GridCell.Tab.4.bottom/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587328928947" />
+    <state width="1877" height="375" key="GridCell.Tab.4.center" timestamp="1587328928947">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.4.left/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
-    <state width="1877" height="375" key="GridCell.Tab.4.right" timestamp="1587322476145">
+    <state width="1877" height="375" key="GridCell.Tab.4.center/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587328928947" />
+    <state width="1877" height="375" key="GridCell.Tab.4.left" timestamp="1587328928947">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1877" height="375" key="GridCell.Tab.4.right/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587322476145" />
+    <state width="1877" height="375" key="GridCell.Tab.4.left/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587328928947" />
+    <state width="1877" height="375" key="GridCell.Tab.4.right" timestamp="1587328928947">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.4.right/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587328928947" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1587260876631">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
@@ -369,10 +372,10 @@
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
     <state x="2381" y="202" key="SettingsEditor/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587275508365" />
-    <state x="2012" y="132" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1587289227803">
+    <state x="2012" y="132" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1587324350457">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state x="2012" y="132" width="1736" height="856" key="VCS.FileHistoryDialog/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587289227803" />
+    <state x="2012" y="132" width="1736" height="856" key="VCS.FileHistoryDialog/0.46.1920.1154/1920.40.1920.1040@1920.40.1920.1040" timestamp="1587324350457" />
     <state x="2543" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1587246289402">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
@@ -396,18 +399,30 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WebApplication/Views/Page/Index.cshtml</url>
-          <line>6</line>
-          <properties documentPath="$PROJECT_DIR$/WebApplication/Views/Page/Index.cshtml" initialLine="6" isMultiMethodBreakpoint="true">
-            <option name="multiMethodBreakpoint" value="true" />
+          <url>file://$PROJECT_DIR$/PresentationLayer/Services/DirectoryService.cs</url>
+          <line>51</line>
+          <properties documentPath="$PROJECT_DIR$/PresentationLayer/Services/DirectoryService.cs" initialLine="51">
             <startOffsets>
-              <option value="-1" />
+              <option value="1781" />
             </startOffsets>
             <endOffsets>
-              <option value="-1" />
+              <option value="1934" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BusinessLayer/Implementations/EFDirectoryRepository.cs</url>
+          <line>29</line>
+          <properties documentPath="$PROJECT_DIR$/BusinessLayer/Implementations/EFDirectoryRepository.cs" initialLine="29">
+            <startOffsets>
+              <option value="997" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1019" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

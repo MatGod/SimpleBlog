@@ -26,7 +26,7 @@ namespace BusinessLayer.Implementations {
 				: _context.Material.FirstOrDefault(x => x.Id == materialId);
 		}
 
-		public void SaveMaterial(Material material) {
+		public int SaveMaterial(Material material) {
 			if (material.Id == 0) {
 				_context.Material.Add(material);
 			}
@@ -35,6 +35,7 @@ namespace BusinessLayer.Implementations {
 			}
 
 			_context.SaveChanges();
+			return 1;
 		}
 
 		public void DeleteMaterial(Material material) {

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using BusinessLayer;
@@ -24,7 +25,13 @@ namespace PresentationLayer.Services {
 
 		public DirectoryViewModel DirectoryDBToViewModelById(int directoryId) {
 			var directory = _dataManager.DirectoryRepository.GetDirectoryById(directoryId, true);
-			var materialViewModels = directory.Materials.Select(item => _materialService.MaterialDBModelToView(item.Id)).ToList();
+			List<MaterialViewModel> materialViewModels = null;
+			try {
+				materialViewModels = directory
+				                         .Materials.Select(item => _materialService.MaterialDBModelToView(item.Id))
+				                         .ToList();
+			} catch(NullReferenceException){};
+
 			return new DirectoryViewModel { Directory = directory, Materials = materialViewModels};
 		}
 
@@ -47,8 +54,7 @@ namespace PresentationLayer.Services {
 				: new Directory();
 			directoryDbModel.Title = directoryEditModel.Title;
 			directoryDbModel.Html = directoryEditModel.Html;
-			
-
+			directoryDbModel.Id = _dataManager.DirectoryRepository.SaveDirectory(directoryDbModel);
 			return DirectoryDBToViewModelById(directoryDbModel.Id);
 		}
 	}

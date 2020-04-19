@@ -120,7 +120,7 @@
           <e p="css" t="Include">
             <e p="site.css" t="Include" />
           </e>
-          <e p="favicon.ico" t="Include" />
+          <e p="favicon.png" t="Include" />
           <e p="js" t="Include">
             <e p="site.js" t="Include" />
           </e>
@@ -175,6 +175,12 @@
               <e p="jquery.validate.unobtrusive.js" t="Include" />
               <e p="jquery.validate.unobtrusive.min.js" t="Include" />
               <e p="LICENSE.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Resourses" t="Include">
+            <e p="Icons" t="Include">
+              <e p="CreateIcon.png" t="Include" />
+              <e p="EditIcon.png" t="Include" />
             </e>
           </e>
         </e>

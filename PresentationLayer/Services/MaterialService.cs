@@ -29,13 +29,19 @@ namespace PresentationLayer.Services {
 			return MaterialDBModelToView(material.Id);
 		}
 		
-		public MaterialEditModel GetMaterialEditModel(int materialId) {
+		public MaterialEditModel GetMaterialEditModel(int materialId, int directoryId) {
 			var databaseModel = _dataManager.MaterialRepository.GetMaterialById(materialId);
+			if (databaseModel != null) {
+				return new MaterialEditModel() {
+					Id = databaseModel.Id,
+					DirectoryId = databaseModel.DirectoryId,
+					Title = databaseModel.Title,
+					Html = databaseModel.Html
+				};
+			}
+
 			return new MaterialEditModel() {
-				Id = databaseModel.Id,
-				DirectoryId = databaseModel.DirectoryId,
-				Title = databaseModel.Title,
-				Html = databaseModel.Html
+				DirectoryId = directoryId
 			};
 		}
 	}

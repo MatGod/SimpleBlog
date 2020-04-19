@@ -25,7 +25,7 @@ namespace WebApplication.Controllers {
 		}
 
 		[HttpGet]
-		public IActionResult PageEditor(int pageId, PageEnums.PageType pageType) {
+		public IActionResult PageEditor(int pageId, PageEnums.PageType pageType, int directoryId) {
 			PageEditModel editModel = null;
 			switch (pageType) {
 				case PageEnums.PageType.Directory: {
@@ -33,7 +33,7 @@ namespace WebApplication.Controllers {
 					break;
 				}
 				case PageEnums.PageType.Material: {
-					editModel = _serviceManager.MaterialService.GetMaterialEditModel(pageId);
+					editModel = _serviceManager.MaterialService.GetMaterialEditModel(pageId, directoryId);
 					break;
 				}
 			}
@@ -44,16 +44,16 @@ namespace WebApplication.Controllers {
 
 		[HttpPost]
 		public IActionResult SaveDirectory(DirectoryEditModel model) {
-			_serviceManager.DirectoryService.SaveDirectoryEditModelToDb(model);
+			var directoryId = _serviceManager.DirectoryService.SaveDirectoryEditModelToDb(model).Directory.Id;
 			return RedirectToAction("Index", "Page",
-			                        new {pageId = model.Id, pageType = PageEnums.PageType.Directory});
+			                        new {pageId = directoryId, pageType = PageEnums.PageType.Directory});
 		}
 		
 		[HttpPost]
 		public IActionResult SaveMaterial(MaterialEditModel model) {
-			_serviceManager.MaterialService.SaveMaterialEditModelToDb(model);
+			var materialId = _serviceManager.MaterialService.SaveMaterialEditModelToDb(model).Material.Id;
 			return RedirectToAction("Index", "Page",
-			                        new {pageId = model.Id, pageType = PageEnums.PageType.Material});
+			                        new {pageId = materialId, pageType = PageEnums.PageType.Material});
 		}
 	}
 }
