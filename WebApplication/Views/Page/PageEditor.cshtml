@@ -1,0 +1,32 @@
+﻿@using PresentationLayer.Models;
+@model PageEditModel
+@if (Model is DirectoryEditModel)
+{
+    var currentModel = (DirectoryEditModel)Model;
+    <form action="/Page/SaveDirectory" method="post">
+        <input type="hidden" value="@ViewBag.PageType" name="PageType" />
+
+        <h1>Edit Directory</h1>
+        <input name="Id" type="hidden" value="@currentModel.Id" />
+        <input name="Title" value="@currentModel.Title" />
+        <textarea name="Html">@currentModel.Html</textarea>
+
+
+        <input type="submit" />
+    </form>
+}
+else if (Model is MaterialEditModel)
+{
+    var currentModel = (MaterialEditModel)Model;
+    <form action="/Page/SaveMaterial" method="post">
+        <input type="hidden" value="@ViewBag.PageType" name="PageType" />
+
+        <h1>Edit Material</h1>
+
+        <input name="Id" type="hidden" value="@currentModel.Id" />
+        <input name="DirectoryId" type="hidden" value="@currentModel.DirectoryId" />
+        <input name="Title" value="@currentModel.Title" />
+        <textarea name="Html">@currentModel.Html</textarea>
+        <input type="submit" />
+    </form>
+}

@@ -1,0 +1,31 @@
+﻿@using PresentationLayer.Models;
+@using DataLayer.Enums;
+@model PageViewModel
+
+
+
+@switch (Model) {
+    /*​*/
+    /*Statement​Start*/
+    case DirectoryViewModel _: {
+        var currentModel = (DirectoryViewModel)Model;
+        <h1>@currentModel.Directory.Title</h1>
+        <p>@Html.Raw(currentModel.Directory.Html)</p>
+        <ul>
+            @if (currentModel.Materials != null)
+            {
+                foreach (var subItem in currentModel.Materials)
+                {
+                    <li><a asp-action="Index" asp-controller="Page" asp-route-pageId="@subItem.Material.Id" asp-route-pageType="@PageEnums.PageType.Material">@subItem.Material.Title</a></li>
+                }
+            }
+        </ul>
+        break;
+    }
+    case MaterialViewModel _: {
+        var currentModel = (MaterialViewModel)Model;
+        <h1>@currentModel.Material.Title</h1>
+        <p>@Html.Raw(currentModel.Material.Html)</p>
+        break;
+    }
+}

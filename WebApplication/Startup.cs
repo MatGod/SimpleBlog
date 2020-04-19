@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BusinessLayer;
+using BusinessLayer.Implementations;
+using BusinessLayer.Interfaces;
 using DataLayer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -25,6 +28,9 @@ namespace WebApplication {
             services.AddDbContext<EFDBContext>(options =>
                                                    options.UseSqlServer(connection,
                                                                         b => b.MigrationsAssembly("DataLayer")));
+            services.AddTransient<IDirectoryRepository, EFDirectoryRepository>();
+            services.AddTransient<IMaterialRepository, EFMaterialRepository>();
+            services.AddScoped<DataManager>();
             services.AddMvc();
         }
 

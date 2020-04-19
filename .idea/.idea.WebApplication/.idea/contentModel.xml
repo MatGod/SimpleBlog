@@ -6,6 +6,26 @@
     <e p="C:\Users\MatGod\AppData\Roaming\JetBrains\Rider2020.1\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\MatGod\AppData\Roaming\JetBrains\Rider2020.1\extensions" t="IncludeRecursive" />
     <e p="E:\StudyFiles\C#\WebApplication" t="IncludeFlat">
+      <e p="BusinessLayer" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BusinessLayer.csproj" t="IncludeRecursive" />
+        <e p="DataManager.cs" t="Include" />
+        <e p="Implementations" t="Include">
+          <e p="EFDirectoryRepository.cs" t="Include" />
+          <e p="EFMaterialRepository.cs" t="Include" />
+        </e>
+        <e p="Interfaces" t="Include">
+          <e p="IDirectoryRepository.cs" t="Include" />
+          <e p="IMaterialRepository.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="BusinessLayer.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="DataLayer" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="DataLayer.csproj" t="IncludeRecursive" />
@@ -14,6 +34,9 @@
           <e p="Directory.cs" t="Include" />
           <e p="Material.cs" t="Include" />
           <e p="Page.cs" t="Include" />
+        </e>
+        <e p="Enums" t="Include">
+          <e p="PageEnums.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
           <e p="20200418215406_Init.cs" t="Include" />
@@ -30,12 +53,34 @@
         <e p="SampleData.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
+      <e p="PresentationLayer" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Models" t="Include">
+          <e p="DirectoryModel.cs" t="Include" />
+          <e p="MaterialModel.cs" t="Include" />
+          <e p="PageModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="PresentationLayer.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PresentationLayer.csproj" t="IncludeRecursive" />
+        <e p="ServiceManager.cs" t="Include" />
+        <e p="Services" t="Include">
+          <e p="DirectoryService.cs" t="Include" />
+          <e p="MaterialService.cs" t="Include" />
+        </e>
+      </e>
       <e p="WebApplication" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="HomeController.cs" t="Include" />
+          <e p="PageController.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />
@@ -59,6 +104,10 @@
           <e p="Home" t="Include">
             <e p="Index.cshtml" t="Include" />
             <e p="Privacy.cshtml" t="Include" />
+          </e>
+          <e p="Page" t="Include">
+            <e p="Index.cshtml" t="Include" />
+            <e p="PageEditor.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />
