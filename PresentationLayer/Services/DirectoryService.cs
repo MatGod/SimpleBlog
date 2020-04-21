@@ -24,7 +24,7 @@ namespace PresentationLayer.Services {
 		}
 
 		public DirectoryViewModel DirectoryDBToViewModelById(int directoryId) {
-			var directory = _dataManager.DirectoryRepository.GetDirectoryById(directoryId, true);
+			var directory = _dataManager.DirectoryRepository.GetDirectoryById(directoryId);
 			List<MaterialViewModel> materialViewModels = null;
 			try {
 				materialViewModels = directory
@@ -56,6 +56,14 @@ namespace PresentationLayer.Services {
 			directoryDbModel.Html = directoryEditModel.Html;
 			directoryDbModel.Id = _dataManager.DirectoryRepository.SaveDirectory(directoryDbModel);
 			return DirectoryDBToViewModelById(directoryDbModel.Id);
+		}
+
+		public void DeleteDirectoryEditModelFromDb(DirectoryEditModel directoryEditModel) {
+			if (directoryEditModel.Id != 0) {
+				_dataManager.DirectoryRepository.DeleteDirectory(_dataManager
+				                                                 .DirectoryRepository
+				                                                 .GetDirectoryById(directoryEditModel.Id));
+			}
 		}
 	}
 }

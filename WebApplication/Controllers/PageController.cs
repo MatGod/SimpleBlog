@@ -48,12 +48,24 @@ namespace WebApplication.Controllers {
 			return RedirectToAction("Index", "Page",
 			                        new {pageId = directoryId, pageType = PageEnums.PageType.Directory});
 		}
+
+		[HttpPost]
+		public IActionResult DeleteDirectory(DirectoryEditModel model) {
+			_serviceManager.DirectoryService.DeleteDirectoryEditModelFromDb(model);
+			return RedirectToAction("Index", "Home");
+		}
 		
 		[HttpPost]
 		public IActionResult SaveMaterial(MaterialEditModel model) {
 			var materialId = _serviceManager.MaterialService.SaveMaterialEditModelToDb(model).Material.Id;
 			return RedirectToAction("Index", "Page",
 			                        new {pageId = materialId, pageType = PageEnums.PageType.Material});
+		}
+
+		[HttpPost]
+		public IActionResult DeleteMaterial(MaterialEditModel model) {
+			_serviceManager.MaterialService.DeleteMaterialEditModelFromDb(model);
+			return RedirectToAction("Index", "Home");
 		}
 	}
 }

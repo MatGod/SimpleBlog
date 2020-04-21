@@ -16,6 +16,7 @@ namespace DataLayer {
 			optionsBuilder
 				.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=DataBase;Trusted_Connection=True;MultipleActiveResultSets=true",
 				              b => b.MigrationsAssembly("DataLayer"));
+			optionsBuilder.EnableSensitiveDataLogging();
 			return new EFDBContext(optionsBuilder.Options);
 		}
 	}

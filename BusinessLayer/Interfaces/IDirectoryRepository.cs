@@ -3,8 +3,8 @@ using DataLayer.Entityes;
 
 namespace BusinessLayer.Interfaces {
 	public interface IDirectoryRepository {
-		IEnumerable<Directory> GetAllDirectories(bool includeMaterials = false);
-		Directory GetDirectoryById(int directoryId, bool includeMaterials = false);
+		IEnumerable<Directory> GetAllDirectories();
+		Directory GetDirectoryById(int directoryId);
 		int SaveDirectory(Directory directory);
 		void DeleteDirectory(Directory directory);
 	}

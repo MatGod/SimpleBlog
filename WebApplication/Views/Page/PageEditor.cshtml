@@ -1,32 +1,50 @@
 ﻿@using PresentationLayer.Models;
 @model PageEditModel
-@if (Model is DirectoryEditModel)
-{
-    var currentModel = (DirectoryEditModel)Model;
-    <form action="/Page/SaveDirectory" method="post">
-        <input type="hidden" value="@ViewBag.PageType" name="PageType" />
 
-        <h1>Edit Directory</h1>
-        <input name="Id" type="hidden" value="@currentModel.Id" />
-        <input name="Title" value="@currentModel.Title" />
-        <textarea name="Html">@currentModel.Html</textarea>
-
-
-        <input type="submit" />
-    </form>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Edit Page";
 }
-else if (Model is MaterialEditModel)
-{
-    var currentModel = (MaterialEditModel)Model;
-    <form action="/Page/SaveMaterial" method="post">
-        <input type="hidden" value="@ViewBag.PageType" name="PageType" />
 
-        <h1>Edit Material</h1>
-
-        <input name="Id" type="hidden" value="@currentModel.Id" />
-        <input name="DirectoryId" type="hidden" value="@currentModel.DirectoryId" />
-        <input name="Title" value="@currentModel.Title" />
-        <textarea name="Html">@currentModel.Html</textarea>
-        <input type="submit" />
-    </form>
+@switch (Model) {
+    case DirectoryEditModel _: {
+        var currentModel = (DirectoryEditModel)Model;
+        <form action="/Page/SaveDirectory" method="post">
+            <input type="hidden" value="@ViewBag.PageType" name="PageType" />
+            <h1>Edit Directory</h1>
+            <input name="Id" type="hidden" value="@currentModel.Id" />
+            Directory Name<br/>
+            <input class="titleInput" name="Title" value="@currentModel.Title" /><br/>
+            Directory description<br/>
+            <textarea class="contentInput" name="Html">@currentModel.Html</textarea><br/>
+            <button type="submit">Save Directory</button>
+        </form>
+        <form action="/Page/DeleteDirectory" method="post">
+            <input type="hidden" value="@ViewBag.PageType" name="PageType" />
+            <input name="Id" type="hidden" value="@currentModel.Id" />
+            <button class="deleteButton" type="submit">Delete Directory</button>
+        </form>
+        break;
+    }
+    case MaterialEditModel _: {
+        var currentModel = (MaterialEditModel)Model;
+        <form action="/Page/SaveMaterial" method="post">
+            <input type="hidden" value="@ViewBag.PageType" name="PageType" />
+            <h1>Edit Material</h1>
+            <input name="Id" type="hidden" value="@currentModel.Id" />
+            <input name="DirectoryId" type="hidden" value="@currentModel.DirectoryId" />
+            Material Name<br/>
+            <input class="titleInput" name="Title" value="@currentModel.Title" /><br/>
+            Material Content<br/>
+            <textarea class="contentInput" name="Html">@currentModel.Html</textarea><br/>
+            <button type="submit">Save Material</button>
+        </form>
+        <form action="/Page/DeleteMaterial" method="post">
+            <input type="hidden" value="@ViewBag.PageType" name="PageType" />
+            <input name="Id" type="hidden" value="@currentModel.Id" />
+            <input name="DirectoryId" type="hidden" value="@currentModel.DirectoryId" />
+            <button type="submit">Delete Material</button>
+        </form>
+        break;
+    }
 }

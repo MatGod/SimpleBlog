@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using BusinessLayer.Interfaces;
 using DataLayer;
@@ -6,6 +7,7 @@ using DataLayer.Entityes;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLayer.Implementations {
+	[SuppressMessage("ReSharper", "InconsistentNaming")]
 	public class EFDirectoryRepository : IDirectoryRepository {
 		private readonly EFDBContext _context;
 
@@ -13,17 +15,13 @@ namespace BusinessLayer.Implementations {
 			this._context = context;
 		}
 		
-		public IEnumerable<Directory> GetAllDirectories(bool includeMaterials = false) {
-			return includeMaterials
-				? _context.Set<Directory>().Include(x => x.Materials).AsNoTracking().ToList()
-				: _context.Directory.ToList();
+		public IEnumerable<Directory> GetAllDirectories() {
+			return _context.Set<Directory>().Include(x => x.Materials).ToList();
 		}
 
-		public Directory GetDirectoryById(int directoryId, bool includeMaterials = false) {
-			return includeMaterials
-				? _context.Set<Directory>().Include(x => x.Materials).AsNoTracking().
-				        FirstOrDefault(x => x.Id == directoryId)
-				: _context.Directory.FirstOrDefault(x => x.Id == directoryId);
+		public Directory GetDirectoryById(int directoryId) {
+			return _context.Set<Directory>().Include(x => x.Materials).
+				        FirstOrDefault(x => x.Id == directoryId);
 		}
 
 		public int SaveDirectory(Directory directory) {
@@ -39,8 +37,11 @@ namespace BusinessLayer.Implementations {
 		}
 
 		public void DeleteDirectory(Directory directory) {
-			_context.Directory.Remove(directory);
-			_context.SaveChanges();
+			try {
+				_context.Directory.Remove(directory);
+				_context.SaveChanges();
+			}
+			catch (DbUpdateConcurrencyException) { }
 		}
 	}
 }

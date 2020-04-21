@@ -6,12 +6,12 @@ namespace DataLayer {
 		public static void InitData(EFDBContext context) {
 			if (!context.Directory.Any()) {
 				context.Directory.Add(new Directory {
-					Title = "FirstDirectory", 
-					Html = "<b>DirectoryContent</b>"
+					Title = "First Directory", 
+					Html = "Directory Content"
 				});
 				context.Directory.Add(new Directory {
-					Title = "SecondDirectory", 
-					Html = "<b>DirectoryContent</b>"
+					Title = "Second Directory", 
+					Html = "Directory Content"
 				});
 				context.SaveChanges();
 			}
@@ -19,12 +19,12 @@ namespace DataLayer {
 			if (context.Material.Any()) return;
 			context.Material.Add(new Material { 
 				Title = "First Material", 
-				Html = "<i>MaterialContent</i>", 
+				Html = "Material Content", 
 				DirectoryId = context.Directory.ToList().First().Id
 			});
 			context.Material.Add(new Material {
 				Title = "Second Material",
-				Html = "<i>MaterialContent</i>",
+				Html = "Material Content",
 				DirectoryId = context.Directory.ToList().Last().Id
 			});
 			context.SaveChanges();

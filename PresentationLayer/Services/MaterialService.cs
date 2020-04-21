@@ -14,7 +14,7 @@ namespace PresentationLayer.Services {
 
 		public MaterialViewModel MaterialDBModelToView(int materialId) {
 			return new MaterialViewModel {
-				Material = _dataManager.MaterialRepository.GetMaterialById(materialId, true)
+				Material = _dataManager.MaterialRepository.GetMaterialById(materialId)
 			};
 		}
 
@@ -43,6 +43,14 @@ namespace PresentationLayer.Services {
 			return new MaterialEditModel() {
 				DirectoryId = directoryId
 			};
+		}
+		
+		public void DeleteMaterialEditModelFromDb(MaterialEditModel materialEditModel) {
+			if (materialEditModel.Id != 0) {
+				_dataManager.MaterialRepository.DeleteMaterial(_dataManager.
+				                                               MaterialRepository.
+				                                               GetMaterialById(materialEditModel.Id));
+			}
 		}
 	}
 }

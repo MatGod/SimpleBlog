@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationLayer", "PresentationLayer\PresentationLayer.csproj", "{EC5CB20B-83B8-44AE-8287-A48D9C613AE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayerTests", "BusinessLayerTests\BusinessLayerTests.csproj", "{32EB0C41-6D80-49D6-B961-05ED83632A02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{EC5CB20B-83B8-44AE-8287-A48D9C613AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC5CB20B-83B8-44AE-8287-A48D9C613AE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC5CB20B-83B8-44AE-8287-A48D9C613AE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32EB0C41-6D80-49D6-B961-05ED83632A02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32EB0C41-6D80-49D6-B961-05ED83632A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32EB0C41-6D80-49D6-B961-05ED83632A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32EB0C41-6D80-49D6-B961-05ED83632A02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
