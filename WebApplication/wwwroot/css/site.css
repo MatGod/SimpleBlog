@@ -67,6 +67,10 @@ body {
   line-height: 60px; /* Vertically center the text there */
 }
 
+.h1Icon {
+  height: 30px;
+}
+
 .h2Icon {
   height: 24px;
 }

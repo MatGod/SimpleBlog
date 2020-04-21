@@ -9,7 +9,18 @@
     case DirectoryViewModel _: {
         var currentModel = (DirectoryViewModel)Model;
         ViewData["Title"] = currentModel.Directory.Title;
-        <h1>@currentModel.Directory.Title</h1>
+        <h1>
+            @currentModel.Directory.Title
+            <a asp-action="PageEditor"
+               asp-controller="Page"
+               asp-route-pageId="@currentModel.Directory.Id"
+               asp-route-pageType="@PageEnums.PageType.Directory">
+                <img class="h1Icon"
+                     src="Resourses/Icons/EditIcon.png"
+                     alt="(Edit)"
+                     title="Edit Directory"/>
+            </a>
+        </h1>
         <p>@Html.Raw(currentModel.Directory.Html)</p>
         <ul>
             @if (currentModel.Materials != null)
@@ -26,13 +37,38 @@
                     </li>
                 }
             }
+            <li>
+                <a asp-action="PageEditor"
+                   asp-controller="Page"
+                   asp-route-pageId="0"
+                   asp-route-directoryid="@currentModel.Directory.Id"
+                   asp-route-pageType="@PageEnums.PageType.Material">
+                    
+                    <img class="inTextIcon"
+                         src="Resourses/Icons/CreateIcon.png"
+                         alt="(Create Material)"
+                         title="Create Material"/>
+                </a>
+            </li>
         </ul>
         break;
     }
     case MaterialViewModel _: {
         var currentModel = (MaterialViewModel)Model;
         ViewData["Title"] = currentModel.Material.Title;
-        <h1>@currentModel.Material.Title</h1>
+        <h1>
+            @currentModel.Material.Title
+            <a asp-action="PageEditor" asp-controller="Page"
+               asp-route-pageId="@currentModel.Material.Id"
+               asp-route-pageType="@PageEnums.PageType.Material"
+               asp-route-directoryId="@currentModel.Material.DirectoryId">
+                
+                <img class="h1Icon"
+                     src="Resourses/Icons/EditIcon.png"
+                     alt="(Edit)"
+                     title="Edit Material"/>
+            </a>
+        </h1>
         <p>@Html.Raw(currentModel.Material.Html)</p>
         break;
     }

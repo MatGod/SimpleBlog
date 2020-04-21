@@ -19,15 +19,6 @@
                            asp-route-pageType="@PageEnums.PageType.Directory">
                             @item.Directory.Title
                         </a>
-                        <a asp-action="PageEditor"
-                           asp-controller="Page"
-                           asp-route-pageId="@item.Directory.Id"
-                           asp-route-pageType="@PageEnums.PageType.Directory">
-                            <img class="h2Icon" 
-                                 src="Resourses/Icons/EditIcon.png" 
-                                 alt="(Edit)" 
-                                 title="Edit Directory"/>
-                        </a>
                     </h2>
                     <ul>
                         @if (item.Materials != null)
@@ -40,29 +31,8 @@
                                        asp-route-pageType="@PageEnums.PageType.Material">
                                         @subItem.Material.Title
                                     </a>
-                                    <a asp-action="PageEditor" asp-controller="Page"
-                                       asp-route-pageId="@subItem.Material.Id"
-                                       asp-route-pageType="@PageEnums.PageType.Material"
-                                       asp-route-directoryId="@item.Directory.Id">
-                                        <img class="inTextIcon"
-                                             src="Resourses/Icons/EditIcon.png" 
-                                             alt="(Edit)" 
-                                             title="Edit Material"/>
-                                    </a>
                                 </li>
                             }
-                            <li>
-                                <a asp-action="PageEditor"
-                                   asp-controller="Page"
-                                   asp-route-pageId="0"
-                                   asp-route-directoryid="@item.Directory.Id"
-                                   asp-route-pageType="@PageEnums.PageType.Material">
-                                    <img class="inTextIcon" 
-                                         src="Resourses/Icons/CreateIcon.png" 
-                                         alt="(Create Material)"
-                                         title="Create Material"/>
-                                </a>
-                            </li>
                         }
                     </ul>
                 </li>
