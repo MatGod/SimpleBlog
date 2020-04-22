@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using DataLayer.Entityes;
+using DomenModels.Models;
 
 namespace PresentationLayer.Models {
 	public class MaterialViewModel : PageViewModel {

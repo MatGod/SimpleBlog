@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using DataLayer.Entityes;
+using DomenModels.Models;
 
-namespace BusinessLayer.Interfaces {
+namespace DataAccessLayer.Interfaces {
 	public interface IDirectoryRepository {
 		IEnumerable<Directory> GetAllDirectories();
 		Directory GetDirectoryById(int directoryId);

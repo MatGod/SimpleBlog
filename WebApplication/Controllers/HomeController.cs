@@ -10,7 +10,7 @@ namespace WebApplication.Controllers {
         private readonly ILogger<HomeController> _logger;
         private readonly ServiceManager _serviceManager;
 
-        public HomeController(ILogger<HomeController> logger, DataManager dataManager) {
+        public HomeController(ILogger<HomeController> logger, LogicManager dataManager) {
             _logger = logger;
             _serviceManager = new ServiceManager(dataManager);
         }

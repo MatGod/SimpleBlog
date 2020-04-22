@@ -1,9 +1,9 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using BusinessLayer.Implementations;
+using DataAccessLayer.Implementations;
 using DataLayer;
-using DataLayer.Entityes;
+using DomenModels.Models;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 

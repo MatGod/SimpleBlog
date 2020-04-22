@@ -4,8 +4,8 @@ using Microsoft.EntityFrameworkCore.Design;
 
 namespace DataLayer {
 	public class EFDBContext : DbContext {
-		public DbSet<Directory> Directory { get; set; }
-		public DbSet<Material> Material { get; set; }
+		public DbSet<DbDirectory> Directory { get; set; }
+		public DbSet<DbMaterial> Material { get; set; }
 		
 		public EFDBContext(DbContextOptions<EFDBContext> options):base(options) {}
 	}

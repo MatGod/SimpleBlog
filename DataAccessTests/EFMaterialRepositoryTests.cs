@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using BusinessLayer.Implementations;
+using DataAccessLayer.Implementations;
 using DataLayer;
-using DataLayer.Entityes;
+using DomenModels.Models;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 
@@ -67,8 +67,7 @@ namespace BusinessLayerTests {
 
 		[Fact]
 		public void SaveMaterial_MaterialNotInBase() {
-			var material = new Material
-				{Title = "Saved Material", DirectoryId = 1, Directory = _directoryRepository.GetDirectoryById(1)};
+			var material = new Material {Title = "Saved Material"};
 			var result = _materialRepository.SaveMaterial(material);
 			Assert.Equal("Saved Material", _materialRepository.GetMaterialById(result).Title);
 		}
@@ -91,8 +90,7 @@ namespace BusinessLayerTests {
 		
 		[Fact]
 		public void DeleteMaterial_MaterialNotInBase() {
-			var material = new Material
-				{Title = "Saved Material", DirectoryId = 1, Directory = _directoryRepository.GetDirectoryById(1)};
+			var material = new Material {Title = "Saved Material"};
 			_materialRepository.DeleteMaterial(material);
 			Assert.Null(_materialRepository.GetMaterialById(material.Id));
 		}

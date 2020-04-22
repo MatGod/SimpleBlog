@@ -8,8 +8,8 @@ namespace WebApplication.Controllers {
 	public class PageController : Controller {
 		private readonly ServiceManager _serviceManager;
 
-		public PageController(DataManager dataManager) {
-			_serviceManager = new ServiceManager(dataManager);
+		public PageController(LogicManager logicManager) {
+			_serviceManager = new ServiceManager(logicManager);
 		}
 
 		// GET
@@ -26,17 +26,12 @@ namespace WebApplication.Controllers {
 
 		[HttpGet]
 		public IActionResult PageEditor(int pageId, PageEnums.PageType pageType, int directoryId) {
-			PageEditModel editModel = null;
-			switch (pageType) {
-				case PageEnums.PageType.Directory: {
-					editModel = _serviceManager.DirectoryService.GetDirectoryEditModel(pageId);
-					break;
-				}
-				case PageEnums.PageType.Material: {
-					editModel = _serviceManager.MaterialService.GetMaterialEditModel(pageId, directoryId);
-					break;
-				}
-			}
+			PageEditModel editModel = pageType switch {
+				PageEnums.PageType.Directory => _serviceManager.DirectoryService.GetDirectoryEditModel(pageId),
+				PageEnums.PageType.Material =>
+				_serviceManager.MaterialService.GetMaterialEditModel(pageId, directoryId),
+				_ => null
+			};
 
 			ViewBag.PageType = pageType;
 			return View(editModel);

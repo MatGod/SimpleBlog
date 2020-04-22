@@ -1,4 +1,5 @@
 ﻿using BusinessLayer;
+using DataAccessLayer;
 using PresentationLayer.Services;
 
 namespace PresentationLayer {
@@ -6,9 +7,9 @@ namespace PresentationLayer {
 		public DirectoryService DirectoryService { get; }
 		public MaterialService MaterialService { get; }
 		
-		public ServiceManager(DataManager dataManager) {
-			DirectoryService = new DirectoryService(dataManager);
-			MaterialService = new MaterialService(dataManager);
+		public ServiceManager(LogicManager logicManager) {
+			DirectoryService = new DirectoryService(logicManager);
+			MaterialService = new MaterialService(logicManager);
 		}
 	}
 }

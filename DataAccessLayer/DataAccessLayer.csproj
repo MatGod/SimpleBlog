@@ -5,7 +5,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
+      <ProjectReference Include="..\DataLayer\DataLayer.csproj" />
+      <ProjectReference Include="..\DomenModels\DomenModels.csproj" />
     </ItemGroup>
 
 </Project>

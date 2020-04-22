@@ -4,11 +4,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{5A588E39-22DD-4A3C-B2B6-9A135116747A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{81C18724-09CB-4CC3-BD55-0706CD780F6C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{81C18724-09CB-4CC3-BD55-0706CD780F6C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationLayer", "PresentationLayer\PresentationLayer.csproj", "{EC5CB20B-83B8-44AE-8287-A48D9C613AE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayerTests", "BusinessLayerTests\BusinessLayerTests.csproj", "{32EB0C41-6D80-49D6-B961-05ED83632A02}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessTests", "DataAccessTests\DataAccessTests.csproj", "{32EB0C41-6D80-49D6-B961-05ED83632A02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{0583CF71-6AD8-4074-8B16-493CB621E99A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomenModels", "DomenModels\DomenModels.csproj", "{F18D7A49-8717-460C-BEAC-7F6494BCA5E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +40,13 @@ Global
 		{32EB0C41-6D80-49D6-B961-05ED83632A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32EB0C41-6D80-49D6-B961-05ED83632A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32EB0C41-6D80-49D6-B961-05ED83632A02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0583CF71-6AD8-4074-8B16-493CB621E99A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0583CF71-6AD8-4074-8B16-493CB621E99A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0583CF71-6AD8-4074-8B16-493CB621E99A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0583CF71-6AD8-4074-8B16-493CB621E99A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F18D7A49-8717-460C-BEAC-7F6494BCA5E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F18D7A49-8717-460C-BEAC-7F6494BCA5E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F18D7A49-8717-460C-BEAC-7F6494BCA5E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F18D7A49-8717-460C-BEAC-7F6494BCA5E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
