@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomenModels", "DomenModels\DomenModels.csproj", "{F18D7A49-8717-460C-BEAC-7F6494BCA5E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayerTests", "BusinessLayerTests\BusinessLayerTests.csproj", "{EA446A10-2E60-4CC0-987F-10581CC91BCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{F18D7A49-8717-460C-BEAC-7F6494BCA5E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F18D7A49-8717-460C-BEAC-7F6494BCA5E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F18D7A49-8717-460C-BEAC-7F6494BCA5E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA446A10-2E60-4CC0-987F-10581CC91BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA446A10-2E60-4CC0-987F-10581CC91BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA446A10-2E60-4CC0-987F-10581CC91BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA446A10-2E60-4CC0-987F-10581CC91BCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -28,9 +28,9 @@ namespace BusinessLayer.Logic {
 		}
 
 		public void Clear(Directory directory) {
-			foreach (var material in directory.Materials) {
-				_dataManager.Material.DeleteMaterial(material);
-			}
+			if (directory.Materials == null) return;
+			directory.Materials.Clear();
+			_dataManager.Directory.SaveDirectory(directory);
 		}
 
 		public bool Contains(Directory directory, Material material) {

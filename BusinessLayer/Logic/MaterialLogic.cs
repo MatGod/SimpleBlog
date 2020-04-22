@@ -32,8 +32,13 @@ namespace BusinessLayer.Logic {
 		}
 
 		public void MoveToDirectory(Material material, Directory directory) {
+			var dir = _dataManager.Directory.GetDirectoryById(material.DirectoryId);
+			dir.Materials.Remove(material);
+			_dataManager.Directory.SaveDirectory(dir);
+			directory.Materials.Add(material);
 			material.DirectoryId = directory.Id;
 			_dataManager.Material.SaveMaterial(material);
+			_dataManager.Directory.SaveDirectory(directory);
 		}
 	}
 }

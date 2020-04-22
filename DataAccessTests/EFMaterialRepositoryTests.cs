@@ -7,7 +7,7 @@ using DomenModels.Models;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 
-namespace BusinessLayerTests {
+namespace DataAccessTests {
 	[SuppressMessage("ReSharper", "InconsistentNaming")]
 	public class EFMaterialRepositoryTests : IDisposable{
 		private readonly EFDBContext _context;

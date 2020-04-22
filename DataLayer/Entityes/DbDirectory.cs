@@ -2,6 +2,6 @@
 
 namespace DataLayer.Entityes {
 	public class DbDirectory : Page {
-		public List<DbMaterial> Materials { get; set; }
+		public List<DbMaterial> Materials { get; set; } = new List<DbMaterial>();
 	}
 }

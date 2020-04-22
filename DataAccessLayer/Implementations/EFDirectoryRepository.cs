@@ -58,7 +58,6 @@ namespace DataAccessLayer.Implementations {
 			if (dbDirectory == null) return null;
 			var dir = new Directory {
 				Id = dbDirectory.Id,
-				Materials = new List<Material>(),
 				Html = dbDirectory.Html,
 				Title = dbDirectory.Title
 			};

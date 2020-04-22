@@ -2,7 +2,7 @@
 using DataLayer;
 using DataLayer.Entityes;
 
-namespace BusinessLayerTests {
+namespace DataAccessTests {
 	public static class TestBaseInitializer {
 		public static void Initialize(EFDBContext context) {
 			var directories = new[] {
